@@ -10,7 +10,7 @@ namespace japanese_character_practices.Components.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=Japanese_charecter_practices");
+            optionsBuilder.UseSqlite("Data Source=Japanese_character_practices.db");
         }
     }
 }
