@@ -1,10 +1,13 @@
 using japanese_character_practices.Components;
+using japanese_character_practices.Components.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+builder.Services.AddDbContext<AppDataContext>(options => options.UseSqlite("Data Source=Japanese_character_practices.db"));
 
 var app = builder.Build();
 
