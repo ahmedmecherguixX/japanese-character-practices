@@ -2,14 +2,12 @@
 
 namespace japanese_character_practices.Components.Model
 {
-    public class JapaneseGojuuonCharacter
+    public class SuteganaHiragana
     {
         [Key]
         public string Unicode { get; set; } = null!;
         public string Japanese { get; set; } = null!;
         public string Roman { get; set; } = null!;
-        public bool isNative { get; set; }
-        public bool isDakuten { get; set; }
-        public bool isSutegana { get; set; }
+        public bool IsDakuten { get; set; }
     }
 }
