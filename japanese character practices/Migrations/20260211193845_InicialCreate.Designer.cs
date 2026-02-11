@@ -10,8 +10,8 @@ using japanese_character_practices.Components.Data;
 namespace japanese_character_practices.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20260211165933_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260211193845_InicialCreate")]
+    partial class InicialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -8,6 +8,11 @@ namespace japanese_character_practices.Components.Data
         public DbSet<SuteganaKatakana> SuteganaKatakana { get; set; } = null!;
         public DbSet<YouonKatakana> YouonKatakana { get; set; } = null!;
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source=Japanese_character_practices.db");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Katagana builders
